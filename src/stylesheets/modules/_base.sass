@@ -1,0 +1,50 @@
+.container
+  margin: 0 auto
+  position: relative
+  width: 600px
+
+h1
+  text-align: center
+
+button
+  padding: 0 10px
+
+fieldset
+  border: 0
+  text-align: center
+  label, input[type=text], button
+    display: inline-block
+
+table
+  margin: 20px auto 0
+  text-align: left
+  thead
+    th
+      background-color: #ccc
+      cursor: pointer
+      padding: 10px
+  tbody
+    tr
+      td
+        background-color: rgb(250, 250, 250)
+        padding: 10px
+      &:nth-child(odd)
+        td
+          background-color: rgb(240, 240, 240)
+
+.alert
+  background-color: rgb(200, 200, 200)
+  border-radius: 5px
+  box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.1)
+  height: 200px
+  position: absolute
+  top: 50px
+  left: 50%
+  margin-left: -150px
+  text-align: center
+  padding-top: 20px
+  width: 300px
+  .close
+    position: absolute
+    top: 10px
+    right: 20px

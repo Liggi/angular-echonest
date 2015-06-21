@@ -1,0 +1,42 @@
+<h1>Artist search</h1>
+
+<fieldset>
+  <label for="location_to_search">Enter a location</label> 
+  <input type="text" id="location_to_search" ng-model="location" />
+  <button ng-click="searchOnLocation();">Search</button>
+  <button ng-click="clearLocationCache();">Clear cache</button>
+</fieldset>
+
+<div class="alert" ng-show="message">
+  <strong>Alert</strong>
+  <p>{{message}}</p>
+  <a href="javascript:void(0)" ng-click="dismissMessage();" class="close">x</a>
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" class="results" ng-show="artists.length > 0" table-sort>
+  <thead>
+    <tr>
+      <th data-sort="string">Name</th>
+      <th data-sort="string">Location</th>
+      <th data-sort="string">Years Active</th>
+      <th data-sort="float">Familiarity</th>
+      <th data-sort="float">Hotness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="artist in artists">
+      <td>{{ artist.name }}</td>
+      <td>{{ artist.artist_location.city }}, {{ artist.artist_location.country }}</td>
+      <td>
+        <span ng-repeat="period in artist.years_active">
+          <span>{{ period.start }}</span>
+          <span ng-if="period.end">- {{ period.end }}</span>
+          <span ng-if="!period.end">- Present</span>
+          <br />
+        </span>
+      </td>
+      <td>{{ artist.familiarity }}</td>
+      <td>{{ artist.hotttnesss }}</td>
+    </tr>
+  </tbody>
+</table>

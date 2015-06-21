@@ -1,0 +1,59 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  padding: 0 10px;
+}
+
+fieldset {
+  border: 0;
+  text-align: center;
+}
+fieldset label, fieldset input[type=text], fieldset button {
+  display: inline-block;
+}
+
+table {
+  margin: 20px auto 0;
+  text-align: left;
+}
+table thead th {
+  background-color: #ccc;
+  cursor: pointer;
+  padding: 10px;
+}
+table tbody tr td {
+  background-color: #fafafa;
+  padding: 10px;
+}
+table tbody tr:nth-child(odd) td {
+  background-color: #f0f0f0;
+}
+
+.alert {
+  background-color: #c8c8c8;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px 4px rgba(0, 0, 0, 0.1);
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+  padding-top: 20px;
+  width: 300px;
+}
+.alert .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/*# sourceMappingURL=application.css.map */

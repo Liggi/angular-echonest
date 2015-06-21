@@ -1,0 +1,39 @@
+{
+  "name": "MEAN-Blog",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Liggi/MEAN-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liggi/MEAN-Blog/issues"
+  },
+  "homepage": "https://github.com/Liggi/MEAN-Blog",
+  "dependencies": {
+    "express": "latest",
+    "grunt": "latest",
+    "mongodb": "latest",
+    "mongoose": "latest",
+    "angular": "latest",
+    "ejs": "latest",
+    "moment": "latest"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.1.0",
+    "body-parser": "^1.10.2",
+    "cookie-parser": "^1.3.3",
+    "express-session": "^1.10.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "node-cache": "^1.1.0",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0"
+  }
+}
